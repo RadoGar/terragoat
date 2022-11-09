@@ -36,6 +36,7 @@ resource "aws_s3_bucket_logging" "data" {
 
 
 resource "aws_s3_bucket_object" "data_object" {
+	# checkov:skip=CKV_AWS_186: do-analizy
   bucket = aws_s3_bucket.data.id
   key    = "customer-master.xlsx"
   source = "resources/customer-master.xlsx"
