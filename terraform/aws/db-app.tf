@@ -425,6 +425,9 @@ EOF
     }, {
     Owner = "RGA"
   })
+  metadata_options {
+    http_tokens = "required"
+  }
 }
 
 output "db_app_public_dns" {
